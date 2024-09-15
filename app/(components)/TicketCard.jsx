@@ -1,3 +1,6 @@
+"use client";
+
+import { useRouter } from "next/navigation";
 import DeleteBlock from "./DeleteBlock";
 import PriorityDisplay from "./PriorityDisplay";
 import ProgressBar from "./ProgressBar";
@@ -5,8 +8,17 @@ import StatusDisplay from "./StatusDisplay";
 
 // Actualizamos el componente para aceptar props
 const TicketCard = ({ id, valor, sector, estatus }) => {
+  const router = useRouter(); // Initialize the router
+
+  const handleCardClick = () => {
+    router.push(`/TicketPage/${id}`); // Navigate to the respective ticket page
+  };
+
   return (
-    <div className="flex flex-col bg-card hover:bg-card-hover rounded-md shadow-lg p-3 m-2">
+    <div
+      onClick={handleCardClick}
+      className="flex flex-col bg-card hover:bg-card-hover rounded-md shadow-lg p-3 m-2 cursor-pointer"
+    >
       <div className="flex mb-3">
         <PriorityDisplay priority={valor} />{" "}
         {/* Usamos valor para el componente Priority */}
