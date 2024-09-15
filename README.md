@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Project Story
 
-## Getting Started
+## About the Project
 
-First, run the development server:
+Our project was born out of the urgent need to address the water crisis in Monterrey, where key reservoirs like La Boca and Cerro Prieto are operating at only 5% of their capacity. With water being a scarce and precious resource, especially for industries and communities alike, we wanted to create a solution that could significantly reduce water waste caused by undetected leaks in distribution systems. Given that 40% of water is lost due to leaks, this issue presents a serious economic and environmental challenge.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Inspiration
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+We took inspiration from previous submissions that addressed similar water-related issues, but we wanted to create our own unique solution using cutting-edge technology. The ongoing water crisis in Monterrey served as a powerful motivator, especially when we realized how much water industrial operations consume. Companies like Coca-Cola and local breweries can extract up to 1,600 liters per second, putting even more pressure on already scarce resources. We saw this as a crucial opportunity to leverage computer vision to tackle the problem.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## What It Does
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Our solution utilizes computer vision through existing security cameras to detect potential water leaks in industrial pipelines. By analyzing real-time video streams, our system can alert the appropriate personnel as soon as a leak is detected, helping prevent water wastage.
 
-## Learn More
+## How We Built It
 
-To learn more about Next.js, take a look at the following resources:
+We began by developing the frontend and connecting the app to a database, but the real turning point came when we decided to train our own AI model from scratch. Initially, we faced challenges integrating an existing model into our app, but after much trial and error, we realized that a custom-trained model would better suit our needs. This decision marked a crucial moment in our project development.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Challenges We Ran Into
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+We encountered numerous issues while trying to integrate a pre-trained model into our application, but then we made the decision to train our own model from scratch. Another challenge was the diverse skill sets of our team; one member felt more comfortable working in JavaScript while others preferred Python, so we had to combine both technologies to create our final project.
 
-## Deploy on Vercel
+## Accomplishments That We’re Proud Of
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+We successfully trained the AI model from scratch, it was a challenging accomplishment that made our leak detection system come to life. Additionally, we mixed both JavaScript and Python due to personal preferences from each team member.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## What We Learned
+
+We learned how crucial it is to stay adaptable when working on complex projects like this. Training an AI model from scratch taught us a great deal about data processing, optimization, and model evaluation. We also deepened our knowledge of OpenVINO and how it can optimize vision models for industrial applications. Most importantly, we learned the power of teamwork and how combining diverse skill sets can lead to innovative solutions.
+
+## What’s Next for Flowing Vision
+
+Looking ahead, we plan to refine our model further and scale the project by incorporating more advanced algorithms for leak detection. We also aim to collaborate with industrial partners in Monterrey to deploy our solution in real-world settings, ultimately contributing to water conservation efforts at a large scale. Expanding the project to cover more types of leaks and improving our system’s response time are high on our priority list.
